@@ -61,3 +61,21 @@ Before business use, evaluate on a representative, consented, appropriately labe
 - Add multilingual support and stronger text preprocessing
 - Add model comparison, explainability, and confidence calibration
 - Add privacy, monitoring, and human-in-the-loop review
+
+
+## Deploy a public dashboard (Streamlit Community Cloud)
+
+The repository is prepared for Streamlit Community Cloud. The dashboard trains its small synthetic demonstration model automatically on first launch if the model artifact is not present.
+
+1. Open https://share.streamlit.io/ and sign in.
+2. Connect/authorize your GitHub account if prompted.
+3. Choose **Create app** → **Yup, I have an app**.
+4. Select repository: `tanmaygarg1982-source/Insight-Customer-Voice-Analytics`
+5. Select branch: `main`
+6. Set the main file path to: `app.py`
+7. Optionally set an app URL such as `insight-customer-voice`, if available.
+8. Click **Deploy** and wait for the build to finish.
+
+Streamlit Community Cloud creates a shareable `.streamlit.app` URL after a successful deployment. The first launch may take a little longer because the demo model is trained from the bundled synthetic dataset.
+
+Official deployment guide: https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy
