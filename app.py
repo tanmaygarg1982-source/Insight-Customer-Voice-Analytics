@@ -93,10 +93,17 @@ model = load_model()
 data = load_demo_data()
 
 if model is None:
-    st.warning("The dashboard interface is ready, but the trained model is missing.")
-    st.code("python train_model.py\npython -m streamlit run app.py", language="powershell")
-    st.info("Run these commands from the project folder after installing requirements.txt.")
-    st.stop()
+    st.info("First launch: training the demonstration model from the bundled sample data...")
+    try:
+        from train_model import main as train_demo_model
+        train_demo_model()
+        load_model.clear()
+        model = load_model()
+        st.success("Demonstration model trained successfully.")
+    except Exception as exc:
+        st.error(f"Automatic model training failed: {exc}")
+        st.code("python train_model.py\npython -m streamlit run app.py", language="powershell")
+        st.stop()
 
 if data.empty or not {"review_text", "sentiment"}.issubset(data.columns):
     st.error("The demo dataset is missing or does not contain review_text and sentiment columns.")
