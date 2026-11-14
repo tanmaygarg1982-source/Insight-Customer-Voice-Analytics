@@ -1,0 +1,31 @@
+review_text,sentiment
+"The delivery was quick and the product works perfectly.",Positive
+"Excellent quality and friendly support. I would buy again.",Positive
+"Really happy with this purchase; it exceeded expectations.",Positive
+"Setup was simple and the instructions were clear.",Positive
+"Great value for money and arrived earlier than expected.",Positive
+"The team resolved my issue quickly and professionally.",Positive
+"Beautiful design, reliable performance, and easy to use.",Positive
+"Everything worked as described. Very satisfied.",Positive
+"Fantastic experience from ordering to delivery.",Positive
+"Good product with thoughtful features.",Positive
+"The item is okay and does what it is supposed to do.",Neutral
+"Average experience. Nothing particularly impressive.",Neutral
+"It arrived on time and seems fine so far.",Neutral
+"The quality is acceptable for the price.",Neutral
+"Some features are useful while others are basic.",Neutral
+"Not bad, but there is room for improvement.",Neutral
+"The product matches the description.",Neutral
+"Support answered my question, but the process was ordinary.",Neutral
+"Packaging was standard and delivery took the expected time.",Neutral
+"I have mixed feelings about this purchase.",Neutral
+"The package arrived late and the item was damaged.",Negative
+"Very disappointing quality. It stopped working quickly.",Negative
+"Customer support never responded to my messages.",Negative
+"The product does not work as advertised.",Negative
+"Poor value for money and frustrating setup.",Negative
+"I received the wrong item and nobody helped.",Negative
+"The app crashes frequently and is difficult to use.",Negative
+"Delivery was delayed and the packaging was broken.",Negative
+"Not satisfied with the experience. I would not recommend it.",Negative
+"Instructions were confusing and the device failed.",Negative
